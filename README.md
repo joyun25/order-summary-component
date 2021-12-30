@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://i.imgur.com/Y5XQxMp.png)
+![](https://i.imgur.com/8iaFncM.png)
 
 ### Links
 
