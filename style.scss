@@ -1,0 +1,182 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// Variables
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+$lightShadow: 0 20px 15px rgba(0, 0, 0, .1);
+$redHat: 'Red Hat Display', sans-serif;
+
+// Mixin
+@mixin mobile {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+
+// My Css
+* {
+    box-sizing: border-box;
+    font-family: $redHat;
+    font-size: 16px;
+}
+
+body {
+    background: $paleBlue;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    @include mobile {
+        font-size: 22px;
+    }
+}
+
+p {
+    color: $desaturatedBlue;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+    @include mobile {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrap {
+    padding: 10px;
+}
+
+.bgImg--Pc,
+.bgImg--Mb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.bgImg--Pc {
+    @include mobile {
+        display: none;
+    }
+}
+
+.bgImg--Mb {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
+
+.card {
+    max-width: 450px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: $lightShadow;
+    > img {
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+.container {
+    padding: 40px;
+    @include mobile {
+        padding: 25px;
+    }
+}
+
+.planCard {
+    background: $veryPaleBlue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    a {
+        color: $brightBlue;
+        font-weight: 700;
+        &:hover {
+            color: lighten($brightBlue, 10%);
+            text-decoration: none;
+        }
+    }
+}
+
+.planCard__info {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    @include mobile {
+        margin-left: 0;
+    }
+    img {
+        width: 48px;
+        height: 48px;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.container > a {
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.toPayment {
+    display: block;
+    background: $brightBlue;
+    color: #fff;
+    box-shadow: $lightShadow;
+    padding: 12px;
+    &:hover {
+        background: lighten($brightBlue, 10%);
+    }
+}
+
+.cancelOrder {
+    display: inline-block;
+    color: $desaturatedBlue;
+    margin-top: 25px;
+    padding: 0;
+    &:hover {
+        color: #000;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        font-size: 11px;
+        color: hsl(228, 45%, 44%);
+        &:hover {
+            color: lighten(hsl(228, 45%, 44%), 10%);
+            text-decoration: none;
+        }
+    }
+}

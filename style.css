@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: #e0e8ff;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+p {
+  color: #7280a7;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 450px) {
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrap {
+  padding: 10px;
+}
+
+.bgImg--Pc,
+.bgImg--Mb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 450px) {
+  .bgImg--Pc {
+    display: none;
+  }
+}
+
+.bgImg--Mb {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .bgImg--Mb {
+    display: block;
+  }
+}
+
+.card {
+  max-width: 450px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card > img {
+  border-radius: 15px 15px 0 0;
+}
+
+.container {
+  padding: 40px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+.planCard {
+  background: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.planCard a {
+  color: #3829e0;
+  font-weight: 700;
+}
+
+.planCard a:hover {
+  color: #6255e7;
+  text-decoration: none;
+}
+
+.planCard__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+@media (max-width: 450px) {
+  .planCard__info {
+    margin-left: 0;
+  }
+}
+
+.planCard__info img {
+  width: 48px;
+  height: 48px;
+}
+
+.planCard__info h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.planCard__info p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container > a {
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.toPayment {
+  display: block;
+  background: #3829e0;
+  color: #fff;
+  -webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+}
+
+.toPayment:hover {
+  background: #6255e7;
+}
+
+.cancelOrder {
+  display: inline-block;
+  color: #7280a7;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.cancelOrder:hover {
+  color: #000;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 11px;
+  color: #3e52a3;
+}
+
+.attribution a:hover {
+  color: #556abe;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
