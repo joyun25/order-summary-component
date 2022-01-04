@@ -20,11 +20,11 @@ $redHat: 'Red Hat Display', sans-serif;
 // My Css
 * {
     box-sizing: border-box;
-    font-family: $redHat;
     font-size: 16px;
 }
 
 body {
+    font-family: $redHat;
     background: $paleBlue;
 }
 
