@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/joyun25/order-summary-component-main)
-- Live Site URL: [Github Page](https://joyun25.github.io/order-summary-component-main/)
+- Solution URL: [Github](https://github.com/joyun25/order-summary-component)
+- Live Site URL: [Github Page](https://joyun25.github.io/order-summary-component/)
 
 ### Built with
 
